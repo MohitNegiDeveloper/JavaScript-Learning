@@ -1,0 +1,3 @@
+const outSideTemp = Null
+
+// c

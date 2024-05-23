@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+<button onClick="document.getElementById('click').innerHTML=Date()">click on me</button>
+
+
+<p id="click"></p>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event </title>
+    <style>
+        #btn{
+            padding:10px;
+            border-radius: 5px;
+            color: rgb(245, 249, 245);
+            background-color: cornflowerblue;
+            cursor: pointer;
+            border:2px solid black;
+        }
+        #para{
+            background-color: rgb(192, 192, 197);
+            padding: 10px;
+            margin:10px;
+            text-align:left;
+            justify-content: space-between;
+            color: darkblue;
+        }
+        #head{
+            padding: 10px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="head" style="color: rgb(224, 154, 62)">This is my heading </h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illo nesciunt! Impedit sapiente obcaecati, quisquam temporibus magni laudantium laboriosam dolorum quasi minima at esse nihil accusamus, facere commodi ullam eveniet.</p>
+    
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+
+
+
+    <script>
+        function togglehide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if(para.style.display != "none"){
+            para.style.display = "none";
+        }else{
+            para.style.display ="block";
+        }
+        
+    }
+
+
+
+    </script>
+</body>
+
+</html>
